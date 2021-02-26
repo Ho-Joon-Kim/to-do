@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style/index.css';
-import Clock from './component/Clock.js';
-import Todo from './component/Todo.js';
+import Root from './client/root.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Clock />
-    <Todo />
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
