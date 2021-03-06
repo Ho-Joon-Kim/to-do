@@ -1,9 +1,10 @@
 import { Component } from 'react';
+import TodoList from './TodoList.js';
 import '../style/Todo.css';
 
 class Todo extends Component {
   state = { 
-    todolist : [],
+    todolist : ['not'],
     todovalue : ""
   }
 
@@ -19,11 +20,6 @@ class Todo extends Component {
     })
   }
 
-  componentDidMount() {
-  }
-
-  componentWillUnmount() { 
-  }
 
   render() {
     return (
@@ -33,6 +29,7 @@ class Todo extends Component {
         value={this.state.todovalue}
         onChange={this.handleChange}/>
         <button onClick={this.addtodo}>버튼</button>
+        <TodoList list={this.state.todolist}/>
       </div>
     );
   }
