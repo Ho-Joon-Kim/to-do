@@ -9,9 +9,12 @@ class Todo extends Component {
   }
 
   addtodo = () => {
-    this.setState({
-      todolist: this.state.todolist.concat(this.state.todovalue)
-    })
+    if (this.state.todovalue !== '') {
+      this.setState({
+        todolist: this.state.todolist.concat(this.state.todovalue)
+      })
+    }
+    
   }
 
   handleChange = (e) => {
@@ -25,10 +28,11 @@ class Todo extends Component {
     return (
       <div className="main">
         <input 
-        placeholder="todo" 
+        className="textbox"
+        placeholder="add" 
         value={this.state.todovalue}
         onChange={this.handleChange}/>
-        <button onClick={this.addtodo}>버튼</button>
+        <button className="addbtn" onClick={this.addtodo}>버튼</button>
         <TodoList list={this.state.todolist}/>
       </div>
     );

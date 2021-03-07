@@ -1,0 +1,19 @@
+.list{
+  background-color:#FF5A5F;
+  color:white;
+  width: 370px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.listheader{
+  width: 370px; 
+  margin-left: auto; 
+  margin-right: auto;
+  list-style:none;
+  padding: 0;
+
+}

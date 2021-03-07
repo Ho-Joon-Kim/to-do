@@ -1,12 +1,12 @@
 import { Component } from 'react';
-import '../style/Todo.css';
+import '../style/TodoList.css';
 
 class TodoList extends Component {
 
 
   list = () => {
     let listItem = this.props.list.map((name) =>
-      <li>{name}</li>
+      <li className="list">{name}</li>
     );
 
     return listItem;
@@ -16,7 +16,7 @@ class TodoList extends Component {
   render() {
     return (
       <div>
-        <ul>{<this.list/>}</ul>
+        <ul className="listheader">{<this.list/>}</ul>
       </div>
     );
   }
