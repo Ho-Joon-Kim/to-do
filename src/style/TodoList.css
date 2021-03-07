@@ -7,6 +7,7 @@
   font-weight: 700;
   border-radius: 6px;
   margin-bottom: 5px;
+  line-height: 50px;
 }
 
 .listheader{
@@ -15,5 +16,5 @@
   margin-right: auto;
   list-style:none;
   padding: 0;
-
+  text-align: center;
 }
