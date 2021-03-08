@@ -13,8 +13,12 @@ class Todo extends Component {
       this.setState({
         todolist: this.state.todolist.concat(this.state.todovalue)
       })
+      this.setState({
+        todovalue: ""
+      })
+    }else{
+      alert("공백은 입력할 수 없습니다!")
     }
-    
   }
 
   handleChange = (e) => {
