@@ -24,3 +24,15 @@
   border: 0;
   outline: 0;
 }
+
+.addbtn:active{
+  background-color:#ff5a60c2;
+  color:white;
+  height: 45px;
+  width: 70px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+}

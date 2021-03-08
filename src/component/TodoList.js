@@ -3,7 +3,6 @@ import '../style/TodoList.css';
 
 class TodoList extends Component {
 
-
   list = () => {
     let listItem = this.props.list.map((name) =>
       <li className="list">{name}</li>
@@ -11,7 +10,6 @@ class TodoList extends Component {
 
     return listItem;
   }
-
 
   render() {
     return (
